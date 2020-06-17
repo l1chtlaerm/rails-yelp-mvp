@@ -1,5 +1,12 @@
-<%= @restaurant.name %>
+<div class="container">
+  <h2><%= @restaurant.name %></h2>
+  <p><%= @restaurant.category.capitalize %></p>
+  <p><%= @restaurant.address %></p>
+  <p><%= @restaurant.phone_number %></p>
+</div>
 
+<hr>
 
 <%= link_to 'Back', restaurants_path %> |
 <%= link_to 'Leave a review', new_restaurant_review_path(@restaurant) %>
+

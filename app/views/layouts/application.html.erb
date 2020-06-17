@@ -9,8 +9,11 @@
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
   <body>
+    <nav class="navbar navbar-dark bg-dark">
+      <a class="navbar-brand" href="/restaurants">Yelp MVP</a>
+      <a class="btn btn-outline-success" href="/restaurants/new">Create a new Restaurant</a>
+    </nav>
     <%= yield %>
   </body>
 </html>
